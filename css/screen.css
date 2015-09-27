@@ -1,0 +1,158 @@
+/*
+Document    : CSS
+Created on  : 26 Sep 2015
+Author      : Lorna
+*/
+
+body{
+    font-family: myriad,trebuchet,arial,helvetica,sans-serif;
+    background-color: #bbb333;
+}
+h1{
+    color: #480373;
+    font-size: 2em;
+    font-family: minion,georgia,times-new-roman,serif; 
+}
+
+h2{
+    color: #480373;
+    font-size: 1.7em;
+    font-family: minion,georgia,times-new-roman,serif;
+}
+
+h3{
+    font-size: 1.5em;
+    font-family: minion,georgia,times-new-roman,serif;
+    color: #480373;
+}
+
+h4{
+     font-size: 1.2em;
+    font-family: myriad,trebuchet,arial,helvetica,sans-serif;
+    font-style: italic;
+    color: black;
+    margin-left: 1em;
+}
+
+h5{
+    font-size: 1em;
+    font-family: myriad,trebuchet,arial,helvetica,sans-serif;
+    font-style: italic;
+    color: black;
+    margin-left: 2em;
+}
+#author {
+    font-style: italic;
+    font-family: minion,georgia,times-new-roman,serif;
+    color: #480373;
+}
+
+#equote{
+    font-style: italic;
+}
+
+#pquote{
+    font-style: italic;
+}
+
+#imgcaption {
+   font-size: .7em; 
+}
+
+aside{
+  font-family: garamond,palatino,georgia,serif;
+  font-size: 1.2em;
+
+ 
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-left: 2em;
+}
+ul, ol {
+    margin-left: 0;
+    padding-left: 2em;
+    line-height: 2;
+}
+li {
+    margin-left: 2em;
+}
+
+ol.uproman {
+    list-style-type: upper-roman;
+}
+ol.upalpha {
+    list-style-type: upper-alpha;
+}
+ol.lowroman {
+    list-style-type: lower-roman;
+}
+ol.lowalpha {
+    list-style-type: lower-alpha;
+}
+
+#mainmenu {
+   margin: 0;
+   padding: 0;                                    
+}
+#mainmenu li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+
+
+#page-nav {
+   margin: 0;
+   padding: 0;
+}
+#page-nav li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #0000CC;
+    border-bottom: 1px solid #0000CC;
+}
+a:visited {
+    color: #6D006D;
+    border-bottom: 1px dotted #6D006D;
+}
+a:focus {
+    color: #CC0000;
+    border-bottom: 1px dashed #CC0000;
+}
+a:hover {
+    color: #CC0000;
+    border-bottom: 1px dashed #ff6666;
+}
+a:active {
+    color: #CC0000;
+    border-bottom: 1px solid #CC0000;
+    font-style: italic;
+}
+#fontHead {
+    color: #480373;
+    font-size: 2em;
+    font-family: minion,georgia,times-new-roman,serif;
+    margin-left: 1.5em;
+}
+
+#fontSubHead{
+     font-size: 1.2em;
+    font-family: myriad,trebuchet,arial,helvetica,sans-serif;
+    font-style: italic;
+    color: black;
+    margin-left: 2.5em;
+}
+
+#fontBody{
+       font-family: myriad,trebuchet,arial,helvetica,sans-serif;
+       margin-left: 3em;
+}
