@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Lorna Brown CS313 Home</title>
 		<link href="/css/screen.css" type="text/css" rel="stylesheet" media="screen">	
 	</head>
@@ -10,7 +9,7 @@
 		<header id="page-header">
 	<? php include '/modules/header.php'; ?>
 		</header>
-		<?php include '/modules/page-nav.php'; ?>
+
 	<h1>Lorna Brown - CS 313</h1>
 		<p>This is an educational project.</p>
 

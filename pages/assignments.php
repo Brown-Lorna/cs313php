@@ -10,7 +10,7 @@
 		<header id="page-header">
 			<? php include '/modules/header.php'; ?>
 		</header>
-		<?php include '/modules/page-nav.php'; ?>
+	
 		<h1>Assignments</h1>
 		<p>Coming Soon</p>
 		<ul id="assignment_links">
