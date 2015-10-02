@@ -7,15 +7,16 @@
 	</head>
 	<body>
 		<header id="page-header">
-	
+	<? php include '/modules/header.php'; ?>
 		</header>
+		<?php include '/modules/page-nav.php'; ?>
 	<h1>Lorna Brown - CS 313</h1>
 		<p>This is an educational project.</p>
 
 		<p>More to come soon.</p>
 		<footer id="page-footer">
 	
-		
+		<?php include '/modules/footer.php'; ?>
 		</footer>
 	</body>
 </html>

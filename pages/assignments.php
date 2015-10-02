@@ -8,9 +8,9 @@
 	</head>
 	<body>
 		<header id="page-header">
-			<? php include $_SERVER['DOCUMENT_ROOT'].'/modules/header.php'; ?>
+			<? php include '/modules/header.php'; ?>
 		</header>
-		<?php include $_SERVER['DOCUMENT_ROOT'].'/modules/page-nav.php'; ?>
+		<?php include '/modules/page-nav.php'; ?>
 		<h1>Assignments</h1>
 		<p>Coming Soon</p>
 		<ul id="assignment_links">
@@ -18,7 +18,7 @@
 		</ul>
 		
 		<footer id="page-footer">
-			<?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php'; ?>
+			<?php include '/modules/footer.php'; ?>
 		</footer>
 	</body>
 </html>
