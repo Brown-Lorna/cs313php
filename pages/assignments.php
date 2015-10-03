@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<header id="page-header">
-			<? php include '/modules/header.php'; ?>
+		
 		</header>
 	
 		<h1>Assignments</h1>
@@ -18,7 +18,7 @@
 		</ul>
 		
 		<footer id="page-footer">
-			<?php include '/modules/footer.php'; ?>
+			
 		</footer>
 	</body>
 </html>

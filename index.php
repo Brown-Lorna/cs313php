@@ -14,7 +14,7 @@
 	<li><a href="/pages/helloworld.html">Hello World Assignment</a></li>
 	</ul>
 </nav>
-			<?php include '/modules/header.php'; ?>
+			<img src="../images/lb-monogram.jpg" title="LB Monogram" alt="LB Monogram" width="332" height="298">
 		</header>
 
 	<h1>Lorna Brown - CS 313</h1>
@@ -22,7 +22,8 @@
 
 		<p>Hopefully more to come soon.</p>
 		<footer id="page-footer">
-	
+	<p>copyright &copy; 2015, Lorna Brown
+</p>
 
 		</footer>
 	</body>
