@@ -8,11 +8,17 @@
 	</head>
 	<body>
 		<header id="page-header">
-		
+		<nav id="page-nav">
+	<ul id="mainmenu">
+		<li><a href="index.php">Home</a></li>
+		<li><a href="/pages/assignments.php">Assignments</a></li>
+
+	</ul>
+</nav>
 		</header>
 	
 		<h1>Assignments</h1>
-		<p>Coming Soon</p>
+		<p>Check here to see what I am learning in my CS 313 class:</p>
 		<ul id="assignment_links">
 			<li><a href="helloworld.html">Hello World!</a></li>
 		</ul>
