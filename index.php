@@ -14,6 +14,7 @@
 	<li><a href="/pages/helloworld.html">Hello World Assignment</a></li>
 	</ul>
 </nav>
+			<?php include '/modules/header.php'; ?>
 		</header>
 
 	<h1>Lorna Brown - CS 313</h1>
