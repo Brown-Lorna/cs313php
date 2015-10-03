@@ -7,7 +7,13 @@
 	</head>
 	<body>
 		<header id="page-header">
-	
+	<nav id="page-nav">
+	<ul id="mainmenu">
+		<li><a href="index.php">Home</a></li>
+		<li><a href="/pages/assignments.php">Assignments</a></li>
+	<li><a href="/pages/helloworld.html">Hello World Assignment</a></li>
+	</ul>
+</nav>
 		</header>
 
 	<h1>Lorna Brown - CS 313</h1>
