@@ -156,3 +156,7 @@ a:active {
        font-family: myriad,trebuchet,arial,helvetica,sans-serif;
        margin-left: 3em;
 }
+
+.error{
+	color: #CC0000;
+}

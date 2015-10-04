@@ -1,5 +1,5 @@
 <?php
-// session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +15,9 @@
 	<h1>Welcome <?php echo $_POST["name"]; ?></h1>
 		<h2>Your Survey Results</h2>
 	<p>
+	<?php echo "Your family has " . $_SESSION[malesorfemales] . ".<br>";
+?>
+		
 		Your family has <?php echo $_POST["malesorfemales"]; ?><br>
 	
 		Your favorite number is <?php echo $_POST["favnumber"]; ?>

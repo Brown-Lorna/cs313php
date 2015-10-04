@@ -1,5 +1,5 @@
  <?php
-//session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -12,23 +12,20 @@
 		<meta name="viewport" content="width-device-width, initial-scale=1.0">
 	</head>
 <body>
-<!--	<?php
+	<?php
 // Set session variables
-$_SESSION[""] = "";
+$_SESSION["name"] = "";
+$_SESSION["malesorfemales"] = "";
+$_SESSION["favnumber"] = "";
+$_SESSION["transportation"] = "";
+$_SESSION["surveys"] = "";
+$_SESSION["nameErr"] = "";
 ?>
--->
 
-	<header id="page-header">
-		<nav id="page-nav">
-			<ul id="mainmenu">
-				<li><a href="/index.php">Home</a></li>
-				<li><a href="/pages/assignments.php">Assignments</a></li>
-			</ul>
-		</nav>
-	</header>
+
 	
 	<h1>Vote here!</h1>
-	<p><span class="error">" required field.</span></p>
+	<p><span class="error">* required field.</span></p>
 	<form method="post" action="<?php echo html specialchars($_SERVER["PHP_SELF"]);?>">
 		
 <?php
