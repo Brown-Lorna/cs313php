@@ -22,6 +22,7 @@
 		<ul id="assignment_links">
 			<li><a href="helloworld.html">Hello World!</a></li>
 			<li><a href="week3_TeamActivity.html">Team 2 Activity-Lesson 3</a></li>
+			<li><a href="lesson3PHPsurvey.php">Lesson 3 PHP Survey</a></li>
 		</ul>
 		
 		<footer id="page-footer">
