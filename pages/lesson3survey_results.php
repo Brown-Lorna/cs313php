@@ -18,12 +18,9 @@
 		?>      
 	</p>
 		
-	<p>I rated surveys as a <?php echo $_POST["survey"]; ?></p>
+	<p>You rated surveys as a <?php echo $_POST["surveys"]; ?></p>
 		
-<--!	<?php echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
-	 echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
-?>
--->	
+	
 	
 	</body>
 
