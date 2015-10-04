@@ -17,6 +17,15 @@
 $_SESSION[""] = "";
 ?>
 -->
+
+	<header id="page-header">
+		<nav id="page-nav">
+			<ul id="mainmenu">
+				<li><a href="/index.php">Home</a></li>
+				<li><a href="/pages/assignments.php">Assignments</a></li>
+			</ul>
+		</nav>
+	</header>
 	
 	<h1>Vote here!</h1>
 	<form action="lesson3survey_results.php" method="post">
@@ -26,6 +35,9 @@ $_SESSION[""] = "";
 		<input type="radio" name="malesorfemales" value="more males">More males
 		<input type="radio" name="malesorfemales" value="more females">More females
 		<input type="radio" name="malesorfemales" value="an equal number of males and females">Equal number of each<br>
+	</p>
+	<p>
+		What is your favorite number? <input name="favnumber" type="text"><br>
 	</p>
 	<p>
 		Check your favorite modes of transportation:<br>
@@ -45,11 +57,11 @@ $_SESSION[""] = "";
 	<p>
 		On a scale of 1 to 5, rate how well you like completing surveys.<br>
 		(1 means you dislike surveys, 5 means you enjoy surveys.)<br>
-		<input type="radio" name="surveys" value="1 I would rather do anything else in the whole world">1
-		<input type="radio" name="surveys" value="2 I would rather complete a survey than have the plague">2
+		<input type="radio" name="surveys" value="1 You would rather do anything else in the whole world">1
+		<input type="radio" name="surveys" value="2 You probably would rather complete a survey than have the plague">2
 		<input type="radio" name="surveys" value="3. Surveys are no big deal">3
-		<input type="radio" name="surveys" value="4. I am curious to see how this goes">4
-		<input type="radio" name="surveys" value="5. Either I really like surveys or I am glad I completed my PHP survey assignment">5
+		<input type="radio" name="surveys" value="4. You are curious to see the results">4
+		<input type="radio" name="surveys" value="5. Either you really like surveys or you are glad you completed your PHP survey assignment">5
 	</p>
 	
 	
