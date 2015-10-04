@@ -21,16 +21,12 @@ $_SESSION["transportation"] = "";
 $_SESSION["surveys"] = "";
 $_SESSION["nameErr"] = "";
 ?>
-
-
 	
 	<h1>Vote here!</h1>
 	<p><span class="error">* required field.</span></p>
 	<form method="post" action="<?php echo html specialchars($_SERVER["PHP_SELF"]);?>">
 		
 <?php
-//define variables and set to empty values
-$name = $malesorfemales = $favnumber = $transportation = $surveys = $nameErr = "";
 
 // test inputs and test for empty name
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
