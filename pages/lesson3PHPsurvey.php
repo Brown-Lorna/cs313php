@@ -1,5 +1,5 @@
  <?php
-session_start();
+//session_start();
 ?>
 
 <!DOCTYPE html>
@@ -12,49 +12,24 @@ session_start();
 		<meta name="viewport" content="width-device-width, initial-scale=1.0">
 	</head>
 <body>
-	<?php
+<!--	<?php
 // Set session variables
-$_SESSION["name"] = "";
-$_SESSION["malesorfemales"] = "";
-$_SESSION["favnumber"] = "";
-$_SESSION["transportation"] = "";
-$_SESSION["surveys"] = "";
-$_SESSION["nameErr"] = "";
+$_SESSION[""] = "";
 ?>
+-->
+
+	<header id="page-header">
+		<nav id="page-nav">
+			<ul id="mainmenu">
+				<li><a href="/index.php">Home</a></li>
+				<li><a href="/pages/assignments.php">Assignments</a></li>
+			</ul>
+		</nav>
+	</header>
 	
 	<h1>Vote here!</h1>
-	<p><span class="error">* required field.</span></p>
-	<form method="post" action="<?php echo html specialchars($_SERVER["PHP_SELF"]);?>">
-		
-<?php
-
-// test inputs and test for empty name
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	if (empty($_POST["name"])) {
-		$nameErr = "Name is required";
-	} else {
-	$name = test_input($_POST["name"]);
-	if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-  	$nameErr = "Only letters and white space allowed"; 
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	$malesorfemales = test_input($_POST["malesorfemales"]);
-	$favnumber = test_input($_POST["favnumber"]);
-	$transportation = test_input($_POST["transportation"]);
-	$surveys = test_input($_POST["surveys"]);
-}
-	
-function test_input($data) {
-	$data = trim($data);
-	$data = stripslashes($data);
-	$data _ htmlspecialchars($data);
-	return $data;
-}
-?>
-		
-		Name: <input name="name" type="text">
-		<span class="error">* <?php echo $nameErr;?></span><br>
+	<form action="lesson3survey_results.php" method="post">
+		Name: <input name="name" type="text"><br>
 	<p>
 		Are there more males or females in your family?<br>
 		<input type="radio" name="malesorfemales" value="more males">More males
