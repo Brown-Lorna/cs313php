@@ -28,8 +28,40 @@ $_SESSION[""] = "";
 	</header>
 	
 	<h1>Vote here!</h1>
-	<form action="lesson3survey_results.php" method="post">
-		Name: <input name="name" type="text"><br>
+	<p><span class="error">" required field.</span></p>
+	<form method="post" action="<?php echo html specialchars($_SERVER["PHP_SELF"]);?>">
+		
+<?php
+//define variables and set to empty values
+$name = $malesorfemales = $favnumber = $transportation = $surveys = $nameErr = "";
+
+// test inputs and test for empty name
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	if (empty($_POST["name"])) {
+		$nameErr = "Name is required";
+	} else {
+	$name = test_input($_POST["name"]);
+	if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+  	$nameErr = "Only letters and white space allowed"; 
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	$malesorfemales = test_input($_POST["malesorfemales"]);
+	$favnumber = test_input($_POST["favnumber"]);
+	$transportation = test_input($_POST["transportation"]);
+	$surveys = test_input($_POST["surveys"]);
+}
+	
+function test_input($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data _ htmlspecialchars($data);
+	return $data;
+}
+?>
+		
+		Name: <input name="name" type="text">
+		<span class="error">* <?php echo $nameErr;?></span><br>
 	<p>
 		Are there more males or females in your family?<br>
 		<input type="radio" name="malesorfemales" value="more males">More males
@@ -57,37 +89,18 @@ $_SESSION[""] = "";
 	<p>
 		On a scale of 1 to 5, rate how well you like completing surveys.<br>
 		(1 means you dislike surveys, 5 means you enjoy surveys.)<br>
-		<input type="radio" name="surveys" value="1 You would rather do anything else in the whole world">1
-		<input type="radio" name="surveys" value="2 You probably would rather complete a survey than have the plague">2
-		<input type="radio" name="surveys" value="3. Surveys are no big deal">3
-		<input type="radio" name="surveys" value="4. You are curious to see the results">4
-		<input type="radio" name="surveys" value="5. Either you really like surveys or you are glad you completed your PHP survey assignment">5
+		<input type="radio" name="surveys" value="1 You would rather rather have the plague than complete a survey.">1
+		<input type="radio" name="surveys" value="2 Completing surveys only rate slightly higher than taking a pop quiz.">2
+		<input type="radio" name="surveys" value="3. Surveys are just part of life.">3
+		<input type="radio" name="surveys" value="4. Survey results can be interesting sometimes.">4
+		<input type="radio" name="surveys" value="5. Either you really like surveys or you are just glad you completed your PHP survey assignment.">5
 	</p>
 	
 	
 	<input type="submit" name="submit"><br>
 	</form>
-
- <a href="lesson3survey_results.php">Click here to see the survey results without voting.</a>
+	<p>
+ 		<a href="lesson3survey_results.php">Click here to see the survey results without voting.</a>
+	</p>
 </body>
 </html>
-
-<!--
-OVERVIEW
-Create a simple PHP form that allows users to cast votes for certain questions and see the results.
-
-GUIDELINES
-The following guidelines are the minimum standard for this assignment (to earn 93%). To earn 100%, you should find a way to go beyond this standard to show your creativity and personality. Have fun and make it your own!
-
-Your survey/results should look professional.
-There should be at least four questions.
-Provide a link on the question page to go directly to the results (without voting).
-When the user casts their vote, they should then see the results.
-
-Store the results to a file on the filesystem so they can be retrieved/added to later.
-
-If the user returns to the question page after they have voted, they should be automatically directed to the results. (Think sessions)
-Create a link to your survey from your assignments page.
-Submit the link to your survey to this assignment in I-Learn.
-
--->

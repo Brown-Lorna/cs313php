@@ -3,6 +3,13 @@
 ?>
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf=8">
+		<title>PHP Survey Form Results</title>
+		<meta name="author" content="Lorna Brown">
+		<link href="/css/screen.css" type="text/css" rel="stylesheet" media="screen">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	</head>
 	<body>
 	
 	<h1>Welcome <?php echo $_POST["name"]; ?></h1>
