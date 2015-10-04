@@ -20,7 +20,7 @@ session_start();
 		</nav>
 	</header>
 		
-	<h1>Welcome <?php echo $_POST["name"]; ?>!</h1>
+	<h1>Welcome <?php echo htmlspecialchars($_POST["name"]); ?>!</h1>
 		<h2>Here are the Survey Results</h2>
 	<p>
 	<?php echo "Your family has " . $_SESSION[malesorfemales] . ".<br>";
@@ -29,7 +29,7 @@ session_start();
 		Your family has <?php echo $_POST["malesorfemales"]; ?><br>
 	</p>
 		<p>
-		Your favorite number is <?php echo $_POST["favnumber"] . "."; ?>
+		Your favorite number is <?php echo htmlspecialchars($_POST["favnumber"]) . "."; ?>
 	</p>
 	<p>
 		Your favorite modes of transportation are: 

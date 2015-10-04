@@ -28,7 +28,7 @@ $_SESSION["name"] = "";
 	</header>
 	
 	<h1>Vote here!</h1>
-	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+	<form method="post" action="lesson3survey_results.php") >
 		Name: <input name="name" type="text"><br>
 	<p>
 		Are there more males or females in your family?<br>
