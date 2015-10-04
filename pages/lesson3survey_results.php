@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,13 +29,13 @@
 		Your family has <?php echo $_POST["malesorfemales"]; ?><br>
 	</p>
 		<p>
-		Your favorite number is <?php echo $_POST["favnumber"]; ?>
+		Your favorite number is <?php echo $_POST["favnumber"] . "."; ?>
 	</p>
 	<p>
 		Your favorite modes of transportation are: 
 		<?php
 		$arr = $_POST["transportation"];
-		echo implode(", ", $arr) . "<br>";
+		echo implode(", ", $arr) . ".<br>";
 		?>      
 	</p>
 		
