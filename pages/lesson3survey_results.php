@@ -18,7 +18,7 @@
 		?>      
 	</p>
 		
-	<p>You rated surveys as a <?php echo $_POST["surveys"]; ?></p>
+	<p>You rated completing surveys as a <?php echo $_POST["surveys"]; ?></p>
 		
 	
 	

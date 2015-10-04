@@ -47,9 +47,9 @@ $_SESSION[""] = "";
 		(1 means you dislike surveys, 5 means you enjoy surveys.)<br>
 		<input type="radio" name="surveys" value="1 I would rather do anything else in the whole world">1
 		<input type="radio" name="surveys" value="2 I would rather complete a survey than have the plague">2
-		<input type="radio" name="surveys" value="3 Surveys are no big deal">3
-		<input type="radio" name="surveys" value="4 I am curious to see how this goes">4
-		<input type="radio" name="surveys" value="5 Either I really like surveys or I am glad I completed my PHP survey assignment">5
+		<input type="radio" name="surveys" value="3. Surveys are no big deal">3
+		<input type="radio" name="surveys" value="4. I am curious to see how this goes">4
+		<input type="radio" name="surveys" value="5. Either I really like surveys or I am glad I completed my PHP survey assignment">5
 	</p>
 	
 	
