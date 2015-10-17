@@ -27,8 +27,8 @@
 
 $db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-
-		
+?>
+	<h2>Find shoes</h2>	
 		
 	</body>
 </html>
