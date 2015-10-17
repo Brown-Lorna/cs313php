@@ -23,7 +23,7 @@ session_start();
 	<h1>Welcome <?php echo htmlspecialchars($_POST["name"]); ?>!</h1>
 		<h2>Here are the Survey Results</h2>
 	<p>
-	<?php echo "Your family has " . $_SESSION[malesorfemales] . ".<br>";
+	<?php echo "Your family has " . $_SESSION["malesorfemales"] . ".<br>";
 ?>
 		
 		Your family has <?php echo $_POST["malesorfemales"]; ?><br>

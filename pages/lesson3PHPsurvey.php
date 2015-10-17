@@ -12,11 +12,6 @@ session_start();
 		<meta name="viewport" content="width-device-width, initial-scale=1.0">
 	</head>
 <body>
-	<?php
-// Set session variables
-$_SESSION["name"] = "";
-?>
-
 
 	<header id="page-header">
 		<nav id="page-nav">
