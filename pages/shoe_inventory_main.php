@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>Shoe Inventory</title>
 		<meta name="author" content="Lorna Brown">
 		<link href="/css/screen.css" type="text/css" rel="stylesheet" media="screen">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+
 	</head>
 	<body>
 	<header id="page-header">
@@ -12,6 +13,7 @@
 			<ul id="mainmenu">
 				<li><a href="/index.php">Home</a></li>
 				<li><a href="/pages/assignments.php">Assignments</a></li>
+				<li><a href="/pages/shoe_inventory_main.php">Shoe Inventory</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -22,11 +24,12 @@
 
 		</form> >
 	-->	
-<?php // echo to check the connection
+
+<?php /*// echo to check the connection
 		echo "host:$dbHost:$dbPort dbName:$dbName", user:$dbUser, $dbPassword);
 
 $db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
+*/
 ?>
 	<h2>Find shoes</h2>	
 		
