@@ -5,7 +5,24 @@ require 'connect.php';
 $db = dbConnect();
 
 ?>
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>PHP Survey Form Results</title>
+		<meta name="author" content="Lorna Brown">
+		<link href="/css/screen.css" type="text/css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+	<header id="page-header">
+		<nav id="page-nav">
+			<ul id="mainmenu">
+				<li><a href="/index.php">Home</a></li>
+				<li><a href="/pages/assignments.php">Assignments</a></li>
+				<li><a href="/pages/shoe_inventory_main.php">Shoe Inventory</a></li>
+			</ul>
+		</nav>
+	</header>
  /*	// Get the inventory
 	$query = 'SELECT * FROM shoe_category
 				ORDER BY category_ID';
@@ -21,3 +38,20 @@ echo $categories;
 				ORDER BY style_ID';
  $categories = $db->query($style_query);
 */
+		<h1>Inventory Results</h1>
+		<h2>Here are the Shoe Categories</h2>
+	<p>
+		<?php 
+			$stmt = $db->query('SELECT * FROM shoe_category');
+			$categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			echo "$categories"; ?>
+	</p>
+		<?php 
+foreach($db->query)('SELECT * FROM shoe_category') as $row) {
+	echo $row['category_id']. $row['category_name'];
+}
+	
+	?>
+		
+		</body>
+	</html>

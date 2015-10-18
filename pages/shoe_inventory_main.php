@@ -31,25 +31,11 @@ $db = dbConnect();
 	<form method="post" action="show_inventory.php">
 
 <p>Show available shoe categories</p>
-	<?php
-try {
-	// Get the inventory
-	$categories = $db->prepare('SELECT category_name FROM shoe_category');
-	$categories->execute(); 
+	<input type="submit" name="submit_categories"><br>
+	</form>
 	
-while ($row = $categories->fetch(PDO::FETCH_ASSOC)) {
-	echo '<p>';
-	echo $row['category_name']
-		echo '</p>';
-}
-	catch(PDOException $ex) {
-		echo "Error showing categories: $ex";
-		die();
-	}
-// echo $categories; 
-	//	print $categories; 
-		?>
 		
+
 	<!--	Show shoe sizes available
 		
 		Show shoe colors available
