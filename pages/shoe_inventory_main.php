@@ -47,8 +47,10 @@ $db = dbConnect();
 		</form> >
 	-->	
 
-<p>Show shoe categories</p>
-	<?php	echo $categories ?>
+<p>Show available shoe categories</p>
+	<?php	echo $categories; 
+		print $categories; 
+		?>
 		
 	<!--	Show shoe sizes available
 		
