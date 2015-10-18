@@ -40,8 +40,8 @@ echo $categories;
 -->
 		<h1>Inventory Results</h1>
 		<h3>We have the following Shoe Categories</h3>
-	<p>
-	<!--	php 
+<!--	<p>
+		php 
 			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE category_id=:category_id AND shoe_category=:shoe_category');
 	$stmt->execute(array(':shoe_category' => $category, ':category_id' => $cat_id));
 			$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -59,6 +59,7 @@ foreach($db->query)('SELECT * FROM shoe_category WHERE category_id=category_id A
 		echo implode(", ", $arr) . ".<br>";
 		?>
 php echo $_POST["malesorfemales"];
-
+-->
+		<p>Did it work yet?</p>
 		</body>
 	</html>
