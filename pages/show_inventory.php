@@ -42,11 +42,12 @@ echo $categories;
 		<h3>We have the following Shoe Categories</h3>
 	<p>
 		<?php 
-			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE category_id=category_id AND shoe_category=shoe_category');
-			$categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
-			echo "$categories"; ?>
+			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE category_id=:category_id AND shoe_category=:shoe_category');
+	$stmt->execute(array(':shoe_category' => $category, ':category_id' => $cat_id));
+			$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			echo "$rows"; ?>
 	</p>
-		<?php 
+	<!--	php 
 foreach($db->query)('SELECT * FROM shoe_category WHERE category_id=category_id AND shoe_category=shoe_category') as $row) {
 	echo $row['category_id']. $row['category_name'];
 }
