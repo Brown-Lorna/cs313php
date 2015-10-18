@@ -29,19 +29,19 @@ $db = dbConnect();
 	<h1>Shoe Inventory</h1>
 
 	<form method="post" action="show_inventory.php">
-
-<p>Show available shoe categories</p>
-	<input type="submit" name="submit_categories"><br>
+<h3>Select the inventory information to be shown</h3>
+<p>Show available shoe categories <input type="checkbox" name="inventory[]" value="categories"><br>
+	Show available shoe styles <input type="checkbox" name="inventory[]" value="styles"><br>
+	Show available shoe colors <input type="checkbox" name="inventory[]" value="colors"><br>
+	Show available shoe sizes <input type="checkbox" name="inventory[]" value="sizes"><br>
+		</p>
+		
+	<input type="submit" name="submit"><br>
 	</form>
 	
-		
 
-	<!--	Show shoe sizes available
-		
-		Show shoe colors available
-		
-		Show shoe styles available
--->
-</form> >		
+</form>		
 	</body>
 </html>
+		<input type="checkbox" name="transportation[]" value="Plane">Plane
+		<input type="checkbox" name="transportation[]" value="Racecar">Racecar

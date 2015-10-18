@@ -39,19 +39,25 @@ echo $categories;
  $categories = $db->query($style_query);
 */
 		<h1>Inventory Results</h1>
-		<h2>Here are the Shoe Categories</h2>
+		<h3>We have the following Shoe Categories</h3>
 	<p>
 		<?php 
-			$stmt = $db->query('SELECT * FROM shoe_category');
+			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE category_id=category_id AND shoe_category=shoe_category');
 			$categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			echo "$categories"; ?>
 	</p>
 		<?php 
-foreach($db->query)('SELECT * FROM shoe_category') as $row) {
+foreach($db->query)('SELECT * FROM shoe_category WHERE category_id=category_id AND shoe_category=shoe_category') as $row) {
 	echo $row['category_id']. $row['category_name'];
 }
 	
 	?>
-		
+	<!--	Your favorite modes of transportation are: 
+		php
+		$arr = $_POST["transportation"];
+		echo implode(", ", $arr) . ".<br>";
+		?>
+php echo $_POST["malesorfemales"];
+-->
 		</body>
 	</html>
