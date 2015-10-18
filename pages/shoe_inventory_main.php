@@ -8,6 +8,7 @@ $db = dbConnect();
 	$query = 'SELECT * FROM shoe_category
 				ORDER BY category_ID';
 	$categories = $db->query($query); 
+echo $categories;
  /*	$col_query = 'SELECT * FROM color
 				ORDER BY color_ID';
  $categories = $db->query($col_query);
@@ -47,11 +48,11 @@ $db = dbConnect();
 		</form> >
 	-->	
 
-<p>Show available shoe categories</p>
+<p>Show available shoe categories<br />
 	<?php	echo $categories; 
 		print $categories; 
 		?>
-		
+		</p>
 	<!--	Show shoe sizes available
 		
 		Show shoe colors available
