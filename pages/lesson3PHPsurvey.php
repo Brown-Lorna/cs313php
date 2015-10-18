@@ -23,7 +23,7 @@ session_start();
 	</header>
 	
 	<h1>Vote here!</h1>
-	<form method="post" action="lesson3survey_results.php") >
+	<form method="post" action="lesson3survey_results.php" >
 		Name: <input name="name" type="text"><br>
 	<p>
 		Are there more males or females in your family?<br>

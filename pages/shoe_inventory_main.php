@@ -27,32 +27,35 @@ $db = dbConnect();
 	</header>
 	
 	<h1>Shoe Inventory</h1>
-<!--
-	<form method="post" action="<?php // echo htmlspecialchars();?>">
 
-		</form> >
-	-->	
+	<form method="post" action="show_inventory.php">
 
-<p>Show available shoe categories<br />
+<p>Show available shoe categories</p>
 	<?php
-function loadDatabase() {
+try {
 	// Get the inventory
-	$query = 'SELECT * FROM shoe_category
-				ORDER BY category_ID';
-	$categories = $db->query($query); 
-	return $categories;
-}
+	$categories = $db->prepare('SELECT category_name FROM shoe_category');
+	$categories->execute(); 
 	
-echo $categories; 
-		print $categories; 
+while ($row = $categories->fetch(PDO::FETCH_ASSOC)) {
+	echo '<p>';
+	echo $row['category_name']
+		echo '</p>';
+}
+	catch(PDOException $ex) {
+		echo "Error showing categories: $ex";
+		die();
+	}
+// echo $categories; 
+	//	print $categories; 
 		?>
-		</p>
+		
 	<!--	Show shoe sizes available
 		
 		Show shoe colors available
 		
 		Show shoe styles available
 -->
-		
+</form> >		
 	</body>
 </html>
