@@ -37,11 +37,7 @@ $db = dbConnect();
 		</p>
 		
 	<input type="submit" name="submit"><br>
-	</form>
-	
-
-</form>		
+	</form>	
+		
 	</body>
 </html>
-		<input type="checkbox" name="transportation[]" value="Plane">Plane
-		<input type="checkbox" name="transportation[]" value="Racecar">Racecar

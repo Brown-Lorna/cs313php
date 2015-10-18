@@ -23,7 +23,7 @@ $db = dbConnect();
 			</ul>
 		</nav>
 	</header>
- /*	// Get the inventory
+<!-- Get the inventory
 	$query = 'SELECT * FROM shoe_category
 				ORDER BY category_ID';
 	$categories = $db->query($query); 
@@ -37,7 +37,7 @@ echo $categories;
 	$style_query = 'SELECT * FROM shoe_style
 				ORDER BY style_ID';
  $categories = $db->query($style_query);
-*/
+-->
 		<h1>Inventory Results</h1>
 		<h3>We have the following Shoe Categories</h3>
 	<p>
