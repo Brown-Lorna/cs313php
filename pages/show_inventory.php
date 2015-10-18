@@ -49,7 +49,7 @@ echo $categories;
 			$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			echo "$rows"; ?>
 	</p> -->
-		<?php 
+	<!--	php 
 foreach($db->query)('SELECT * FROM shoe_category WHERE id=category_id AND name=shoe_category') as $row) {
 	echo $row['category_id']. $row['category_name'];
 }
