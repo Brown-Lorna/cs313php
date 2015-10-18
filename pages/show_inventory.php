@@ -41,21 +41,21 @@ echo $categories;
 		<h1>Inventory Results</h1>
 		<h3>We have the following Shoe Categories</h3>
 	<p>
-<?php// echo $_POST["categories"]; ?>
+<?php echo $_POST["categories"]; ?>
 	</p>
-		<?php 
+	<!--	php 
 			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE id=:category_id AND name=:shoe_category');
 	$stmt->execute(array(':shoe_category' => $category, ':category_id' => $cat_id));
 			$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			echo "$rows"; ?>
-	</p>
-	<!--	php 
-foreach($db->query)('SELECT * FROM shoe_category WHERE category_id=category_id AND shoe_category=shoe_category') as $row) {
+	</p> -->
+		<?php 
+foreach($db->query)('SELECT * FROM shoe_category WHERE id=category_id AND name=shoe_category') as $row) {
 	echo $row['category_id']. $row['category_name'];
 }
 	
 	?>
-		Your favorite modes of transportation are: 
+	<!--	Your favorite modes of transportation are: 
 		php
 		$arr = $_POST["inventory"];
 		echo implode(", ", $arr) . ".<br>";
