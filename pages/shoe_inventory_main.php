@@ -5,9 +5,9 @@ require 'connect.php';
 $db = dbConnect();
 
 	// Get the inventory
-	$cat_query = 'SELECT * FROM shoe_category
+	$query = 'SELECT * FROM shoe_category
 				ORDER BY category_ID';
-	$categories = $db->query($cat_query); 
+	$categories = $db->query($query); 
  /*	$col_query = 'SELECT * FROM color
 				ORDER BY color_ID';
  $categories = $db->query($col_query);
