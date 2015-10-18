@@ -35,7 +35,7 @@ $db = dbConnect();
 
 <p>Show available shoe categories<br />
 	<?php
-function dbConnect() {
+function loadDatabase() {
 	// Get the inventory
 	$query = 'SELECT * FROM shoe_category
 				ORDER BY category_ID';
