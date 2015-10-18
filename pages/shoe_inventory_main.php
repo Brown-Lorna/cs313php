@@ -25,13 +25,12 @@
 		</form> >
 	-->	
 
-<?php /*// echo to check the connection
-		echo "host:$dbHost:$dbPort dbName:$dbName", user:$dbUser, $dbPassword);
+<?php // echo to check the connection
+		echo "host:$dbHost dbName:$dbName", user:$dbUser, $dbPassword);
 
-$db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-*/
+$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
+
 ?>
-	<h2>Find shoes</h2>	
 		
 	</body>
 </html>
