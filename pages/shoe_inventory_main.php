@@ -30,13 +30,17 @@ $db = dbConnect();
 
 	<form method="post" action="show_inventory.php">
 <h3>Select the inventory information to be shown</h3>
-<p>Show available shoe categories <input type="checkbox" name="inventory[]" value="categories"><br>
+<p>Show available shoe categories 
+	
+	
+<!--	<input type="checkbox" name="inventory[]" value="categories"><br>
 	Show available shoe styles <input type="checkbox" name="inventory[]" value="styles"><br>
 	Show available shoe colors <input type="checkbox" name="inventory[]" value="colors"><br>
 	Show available shoe sizes <input type="checkbox" name="inventory[]" value="sizes"><br>
-		</p>
+-->		
+</p>
 		
-	<input type="submit" name="submit"><br>
+	<input type="submit" name="categories">Check the Categories<br>
 	</form>	
 		
 	</body>
