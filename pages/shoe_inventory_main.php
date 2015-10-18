@@ -16,6 +16,15 @@
 				<li><a href="/pages/shoe_inventory_main.php">Shoe Inventory</a></li>
 			</ul>
 		</nav>
+		<?php
+
+require '/modules/connect.php';
+
+$db = dbConnect();
+
+echo echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser";
+
+?>
 	</header>
 	
 	<h1>Shoe Inventory</h1>
