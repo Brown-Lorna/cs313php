@@ -25,12 +25,7 @@
 		</form> >
 	-->	
 
-<?php // echo to check the connection
-		echo "host:$dbHost dbName:$dbName", user:$dbUser, $dbPassword);
 
-$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
-
-?>
 		
 	</body>
 </html>
