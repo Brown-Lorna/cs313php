@@ -26,9 +26,9 @@ include 'modules/connect.php';
 		</nav>
 
 	</header>
-	$category_id = $shoe_category['category_id'];
+<!--	$category_id = $shoe_category['category_id'];
 	$category = $shoe_category['category_name'];
-		
+-->		
 	<h1>Shoe Categories</h1>
 		
 		<?php foreach ($shoe_category as $category) : ?>
