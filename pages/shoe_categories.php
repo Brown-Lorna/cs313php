@@ -1,8 +1,6 @@
 <?php
 
-require 'connect.php';
-
-$db = dbConnect();
+require 'modules/connect.php';
 
 ?>
 <!DOCTYPE html>
