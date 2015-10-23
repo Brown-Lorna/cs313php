@@ -1,6 +1,6 @@
 <?php
 
-include 'connect.php';
+require 'connect.php';
 
 // $db = dbConnect();
 
@@ -28,18 +28,18 @@ include 'connect.php';
 	</header>
 <!--	$category_id = $shoe_category['category_id'];
 	$category = $shoe_category['category_name'];
-	
-		php
+	-->
+		<?php
 		$db = dbConnect();
 
 		?>
-	-->		
+			
 	<h1>Shoe Categories</h1>
 	
 		<div>
 
 	<form id="shoe_categories" method="post" action="show_inventory.php">
-<h2>Select the inventory information to be shown</h2>
+<h3>Select the inventory information to be shown</h3>
 <input type="checkbox" name="shoe_category" value="category">Show available shoe categories<br>
 		
 	
