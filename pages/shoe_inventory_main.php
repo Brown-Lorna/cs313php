@@ -29,20 +29,31 @@ require 'connect.php';
 <!--	$category_id = $shoe_category['category_id'];
 	$category = $shoe_category['category_name'];
 	-->
-		<?php
-		$db = dbConnect();
-
-		?>
 			
 	<h1>Shoe Categories</h1>
 	
-		<div>
-
-	<form id="shoe_categories" method="post" action="show_inventory.php">
-<h3>Select the inventory information to be shown</h3>
-<input type="checkbox" name="shoe_category" value="category">Show available shoe categories<br>
 		
-	
+
+	<form id="shoe_form" method="post" action="show_inventory.php">
+<h3>Select the inventory information to be shown</h3>
+		
+try {
+		$statement = $db->prepare('SELECT category_id, category_name FROM shoe_category');
+		$statement->execute();
+		
+	while ($row = $statement->fetch(PDO:FETCH_ASSOC)) {
+		echo '<input type="checkbox" name="shoe_category[]" value="' . $row["category_id"] . '">';
+		echo $row['category_name'];
+		echo '</input><br />';
+		echo "\n";
+	}
+}
+		catch (PDOEXception $ex) {
+		echo "Database connection error.";
+		die();
+		
+?>
+		<br />
 	
 	
 	
@@ -71,9 +82,6 @@ foreach ($shoe_category as $category) : ?>
 		
 	<input type="submit" name="categories">Check the Categories<br>
 	</form>	
-	</div>
-
-
 
 
 	</body>

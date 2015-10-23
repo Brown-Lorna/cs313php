@@ -1,6 +1,11 @@
 <?php
+$category_id = $_POST['category_id'];
+$category_name = $_POST['category_name'];
 
-include 'modules/connect.php';
+echo "category_id=$category_id\n";
+echo "category_name=$category_name\n";
+
+include 'connect.php';
 include 'shoe_inventory_main.php';
 $db = dbConnect();
 
@@ -24,7 +29,13 @@ $db = dbConnect();
 			</ul>
 		</nav>
 	</header>
-	<?php
+	
+		
+		
+		
+		
+		
+<!--		php
 if (isset($_POST['category'])) {
 	echo '<p>The categories of shoes are: ' . $_POST['category'] . '<br>';
 	foreach ($db->query('SELECT shoe_category FROM shoe_inventory WHERE shoe_category = "' . $_POST['shoe_category'] . '"') as $results){
@@ -32,6 +43,7 @@ if (isset($_POST['category'])) {
 		}
 		}
 	?>
+-->
 <!-- Get the inventory
 	$query = 'SELECT * FROM shoe_category
 				ORDER BY category_ID';
