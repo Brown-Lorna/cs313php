@@ -1,6 +1,6 @@
 <?php
 
-include 'modules/connect.php';
+include 'connect.php';
 
 // $db = dbConnect();
 
@@ -17,7 +17,7 @@ include 'modules/connect.php';
 	<body>
 	<header id="page-header">
 		
-		<?php include 'modules/page-nav.php'; ?>
+	<!--	php include 'modules/page-nav.php'; ?>
 <!--		<nav id="page-nav">
 			<ul id="mainmenu">
 				<li><a href="/index.php">Home</a></li>
@@ -30,12 +30,12 @@ include 'modules/connect.php';
 	</header>
 <!--	$category_id = $shoe_category['category_id'];
 	$category = $shoe_category['category_name'];
--->		
-		<?php
+	
+		php
 		$db = dbConnect();
 
 		?>
-		
+	-->		
 	<h1>Shoe Categories</h1>
 	
 		<div>
