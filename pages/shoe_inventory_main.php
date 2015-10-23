@@ -1,6 +1,6 @@
 <?php
 
-require 'modules/connect.php';
+include 'modules/connect.php';
 
 // $db = dbConnect();
 
