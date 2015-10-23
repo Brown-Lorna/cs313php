@@ -1,6 +1,6 @@
 <?php
 
-require 'modules/connect.php';
+include 'modules/connect.php';
 include 'shoe_inventory_main.php';
 $db = dbConnect();
 
@@ -15,7 +15,14 @@ $db = dbConnect();
 	</head>
 	<body>
 	<header id="page-header">
-		<?php include 'modules/page-nav.php'; ?>
+		<nav id="page-nav">
+			<ul id="mainmenu">
+				<li><a href="/index.php">Home</a></li>
+				<li><a href="/pages/assignments.php">Assignments</a></li>
+				<li><a href="/pages/shoe_inventory_main.php">Shoe Inventory</a></li>
+				<li><a href="/pages/shoe_categories.php">Shoe Categories</a></li>
+			</ul>
+		</nav>
 	</header>
 	<?php
 if (isset($_POST['category'])) {

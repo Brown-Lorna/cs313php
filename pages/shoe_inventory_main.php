@@ -17,8 +17,7 @@ include 'connect.php';
 	<body>
 	<header id="page-header">
 		
-	<!--	php include 'modules/page-nav.php'; ?>
-<!--		<nav id="page-nav">
+	<nav id="page-nav">
 			<ul id="mainmenu">
 				<li><a href="/index.php">Home</a></li>
 				<li><a href="/pages/assignments.php">Assignments</a></li>
@@ -26,7 +25,6 @@ include 'connect.php';
 				<li><a href="/pages/shoe_categories.php">Shoe Categories</a></li>
 			</ul>
 		</nav>
--->
 	</header>
 <!--	$category_id = $shoe_category['category_id'];
 	$category = $shoe_category['category_name'];
