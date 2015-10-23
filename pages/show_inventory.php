@@ -1,7 +1,7 @@
 <?php
 
-require 'connect.php';
-
+require 'modules/connect.php';
+include 'shoe_inventory_main.php';
 $db = dbConnect();
 
 ?>
@@ -9,20 +9,22 @@ $db = dbConnect();
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>PHP Survey Form Results</title>
+		<title>Inventory Results</title>
 		<meta name="author" content="Lorna Brown">
 		<link href="/css/screen.css" type="text/css" rel="stylesheet" media="screen">
 	</head>
 	<body>
 	<header id="page-header">
-		<nav id="page-nav">
-			<ul id="mainmenu">
-				<li><a href="/index.php">Home</a></li>
-				<li><a href="/pages/assignments.php">Assignments</a></li>
-				<li><a href="/pages/shoe_inventory_main.php">Shoe Inventory</a></li>
-			</ul>
-		</nav>
+		<?php include 'modules/page-nav.php'; ?>
 	</header>
+	<?php
+if (isset($_POST['category'])) {
+	echo '<p>The categories of shoes are: ' . $_POST['category'] . '<br>';
+	foreach ($db->query('SELECT shoe_category FROM shoe_inventory WHERE shoe_category = "' . $_POST['shoe_category'] . '"') as $results){
+		echo '$_results['shoe_category'] . '"<br>';
+		}
+		}
+	?>
 <!-- Get the inventory
 	$query = 'SELECT * FROM shoe_category
 				ORDER BY category_ID';
