@@ -42,7 +42,7 @@ require 'modules/connect.php';
 
 	<form id="shoe_categories" method="post" action="show_inventory.php">
 <h2>Select the inventory information to be shown</h2>
-<input type="checkbox" name="category" value="category">Show available shoe categories<br>
+<input type="checkbox" name="shoe_category" value="category">Show available shoe categories<br>
 		
 	
 	
