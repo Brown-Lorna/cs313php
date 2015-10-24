@@ -1,8 +1,8 @@
 <?php
 
-require 'connect.php';
+require '/modules/connect.php';
 
-// $db = dbConnect();
+$db = dbConnect();
 
 ?>
 <!DOCTYPE html>
@@ -36,7 +36,7 @@ require 'connect.php';
 
 	<form id="shoe_form" method="post" action="show_inventory.php">
 <h3>Select the inventory information to be shown</h3>
-<?php		
+		
 try {
 		$statement = $db->prepare('SELECT category_id, category_name FROM shoe_category');
 		$statement->execute();
@@ -54,6 +54,7 @@ try {
 		
 ?>
 		<br />
+		
 	
 	
 	
