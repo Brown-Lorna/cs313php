@@ -54,11 +54,7 @@ try {
 		
 ?>
 		<br />
-		
-	
-	
-	
-	
+
 	
 <!-- ?php
 			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE category_id=:category_id AND category_name=:shoe_category');
