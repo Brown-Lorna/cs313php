@@ -20,7 +20,7 @@
 		</header>
 
 	<h1>Lorna Brown - CS 313</h1>
-		<p>This is an educational project.</p>
+		<p>This is an educational project for CS 313.</p>
 
 		<p>More to come soon.</p><br>
 		<footer id="page-footer">
