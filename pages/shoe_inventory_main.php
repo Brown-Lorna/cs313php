@@ -42,7 +42,7 @@ try {
 		$statement = $db->prepare('SELECT category_id, category_name FROM shoe_category');
 		$statement->execute();
 		
-	while ($row = $statement->fetch(PDO:FETCH_ASSOC)) {
+	while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 		echo '<input type="checkbox" name="shoe_category[]" value="' . $row["category_id"] . '">';
 		echo $row['category_name'];
 		echo '</input><br />';
