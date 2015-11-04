@@ -1,8 +1,10 @@
 <?php
 
-require 'modules/connect.php';
+require 'connect.php';
+$db = dbConnect();
 
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,11 +16,19 @@ require 'modules/connect.php';
 	</head>
 	<body>
 	<header id="page-header">
-		<nav id="page-nav">
+	<nav id="page-nav">
 			<ul id="mainmenu">
 				<li><a href="/index.php">Home</a></li>
 				<li><a href="/pages/assignments.php">Assignments</a></li>
 				<li><a href="/pages/shoe_inventory_main.php">Shoe Inventory</a></li>
+			</ul>
+		</nav><br>
+        	<nav id="shoe-nav">
+			<ul id="shoemenu">
+                <li><a href="/pages/show_inventory.php">Show Shoes</a></li>
+				<li><a href="/pages/add_shoe.php">Add Shoe</a></li>
+				<li><a href="/pages/remove_shoe.php">Remove Shoe</a></li>
+				<li><a href="/pages/shoe_categories.php">Shoe Categories</a></li>
 			</ul>
 		</nav>
 

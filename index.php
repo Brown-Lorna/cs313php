@@ -22,7 +22,7 @@
 	<h1>Lorna Brown - CS 313</h1>
 		<p>This is an educational project for CS 313.</p>
 
-		<p>More to come soon.</p><br>
+		<p>Check out my php assignments. Next try my simulated shoe inventory project.</p><br>
 		<footer id="page-footer">
 	<p>copyright &copy; 2015, Lorna Brown
 </p>
