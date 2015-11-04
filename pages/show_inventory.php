@@ -42,7 +42,7 @@ $db = dbConnect();
 		
 		
 		
-        <?php
+ <!--      php
 if (isset($_POST['category'])) {
 	echo '<p>The categories of shoes are: ' . $_POST['category'] . '<br>';
 	foreach ($db->query('SELECT shoe_category FROM shoe_inventory WHERE shoe_category = "' . $_POST['shoe_category'] . '"') as $results){
@@ -50,7 +50,7 @@ if (isset($_POST['category'])) {
 		}
 		}
 	?>
-
+-->
 <!-- Get the inventory
 	$query = 'SELECT * FROM shoe_category
 				ORDER BY category_ID';
