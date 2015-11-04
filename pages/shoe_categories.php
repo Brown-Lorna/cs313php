@@ -38,7 +38,8 @@ $db = dbConnect();
 
 	<form method="post" action="show_inventory.php">
 <h3>Select the inventory information to be shown</h3>
-<p>Show available shoe categories 
+        <h4>Show available shoe categories</h4>
+        <p>
 	<?php 
 			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE id=:category_id AND name=:shoe_category');
 	$stmt->execute(array(':shoe_category' => $category, ':category_id' => $cat_id));

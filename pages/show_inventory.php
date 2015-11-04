@@ -34,10 +34,6 @@ $db = dbConnect();
 			</ul>
 		</nav>
 	</header>
-	
-		
-		
-		
 		
 		
  <!--      php
@@ -81,12 +77,12 @@ foreach($db->query)('SELECT * FROM shoe_category WHERE id=category_id AND name=s
 }
 	
 	?>
-	<!--	Your favorite modes of transportation are: 
+	<!--	
 		php
 		$arr = $_POST["inventory"];
 		echo implode(", ", $arr) . ".<br>";
 		?>
-php echo $_POST["malesorfemales"];
+php echo $_POST["categories"];
 -->
 		<p>Did it work yet?</p>
 		</body>
