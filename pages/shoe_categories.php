@@ -48,7 +48,7 @@ $db = dbConnect();
             $stmtCategories = $db->prepare('SELECT category_id, category_name FROM shoe_category');
             
 	$stmtCategories->execute();
-			while ($rows = $stmt->fetch(PDO::FETCH_ASSOC))
+			while ($rows = $stmtCategories->fetch(PDO::FETCH_ASSOC))
             { 
 			echo "<p>";
             echo $rows['category_name'];
