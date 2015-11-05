@@ -46,8 +46,8 @@ $db = dbConnect();
 			while ($rows = $stmt->fetch(PDO::FETCH_ASSOC))
             { 
 			echo "<p>";
-            echo $rows['name'];
-            echo"</p><br />"; 
+            echo $rows['category_name'];
+            echo "</p><br />"; 
              
             }
             ?>
