@@ -41,7 +41,7 @@ $db = dbConnect();
         <h4>Show available shoe categories</h4>
         <p>
 	<?php 
-			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE id=:category_id AND name=:shoe_category');
+			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE id=:category_id AND name=:category_name');
 	$stmt->execute();
 			while ($rows = $stmt->fetch(PDO::FETCH_ASSOC))
             { 
