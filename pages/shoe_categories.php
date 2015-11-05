@@ -36,7 +36,7 @@ $db = dbConnect();
 	
 	<h1>Shoe Inventory</h1>
 
-	<form method="post" action="show_inventory.php">
+	<form action="show_inventory.php" method="post" >
 <h3>Select the inventory information to be shown</h3>
         <h4>Show available shoe categories</h4>
         <p>
