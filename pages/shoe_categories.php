@@ -42,9 +42,15 @@ $db = dbConnect();
         <p>
 	<?php 
 			$stmt = $db->prepare('SELECT * FROM shoe_category WHERE id=:category_id AND name=:shoe_category');
-	$stmt->execute(array(':shoe_category' => $category, ':category_id' => $cat_id));
-			$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-			echo "$rows"; ?>
+	$stmt->execute();
+			while ($rows = $stmt->fetch(PDO::FETCH_ASSOC))
+            { 
+			echo "<p>";
+            echo $rows['shoe_category'];
+            echo"</p><br />"; 
+             
+            }
+            ?>
 	
 <!--	<input type="checkbox" name="inventory[]" value="categories"><br>
 	Show available shoe styles <input type="checkbox" name="inventory[]" value="styles"><br>
