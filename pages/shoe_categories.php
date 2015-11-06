@@ -50,15 +50,15 @@ $db = dbConnect();
 	$stmtCategories->execute();
 			while ($rows = $stmtCategories->fetch(PDO::FETCH_ASSOC))
             { 
-			echo "<p>";
+			echo "<input type='checkbox' name='category_id[]' value='" . $rows['category_id'] . "'> ";
             echo $rows['category_name'];
-            echo "</p><br />"; 
+            echo "<br>"; 
              
             }
             ?>
-	
-<!--	<input type="checkbox" name="inventory[]" value="categories"><br>
-	Show available shoe styles <input type="checkbox" name="inventory[]" value="styles"><br>
+<!--	
+<input type="checkbox" name="category_id[]" value="category_id"><br>
+		Show available shoe styles <input type="checkbox" name="inventory[]" value="styles"><br>
 	Show available shoe colors <input type="checkbox" name="inventory[]" value="colors"><br>
 	Show available shoe sizes <input type="checkbox" name="inventory[]" value="sizes"><br>
 -->		

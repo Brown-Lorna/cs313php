@@ -218,7 +218,7 @@ VALUES (
 	, 87.50
 );
 
-/*
+
 INSERT INTO shoe (
 	  category_id
 	, size_id
@@ -359,4 +359,3 @@ VALUES (
 	, 10
 	, 3
 );
-*/
